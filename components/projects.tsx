@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ProjectCard from "./project-card";
 
 const Projects = () => {
@@ -27,6 +28,12 @@ const Projects = () => {
           <ProjectCard key={index} data={project} />
         ))}
       </div>
+      <Link
+        href="/projects"
+        className="mx-auto flex w-fit hover:text-blue-500 hover:underline lg:text-xl"
+      >
+        View all projects
+      </Link>
     </section>
   );
 };

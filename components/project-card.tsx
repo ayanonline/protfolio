@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const ProjectCard = ({ data }: { data: any }) => {
   return (
-    <div className="relative m-4 flex h-[20rem] w-[20rem] flex-col items-center justify-center gap-4 rounded-md border-2 bg-white p-4 lg:h-[25rem] lg:w-[20rem]">
+    <div className="relative m-4 flex h-[20rem] w-[20rem] flex-col items-center justify-center gap-4 rounded-md border-2 bg-white p-6 lg:h-[30rem] lg:w-[28rem]">
       <div className="relative h-[10rem] w-[10rem] lg:h-[20rem] lg:w-[20rem]">
         <Image
           src={data?.img}
