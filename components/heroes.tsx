@@ -14,8 +14,9 @@ const Heroes = () => {
       </div>
 
       <div className="flex flex-col items-start gap-4 ">
-        <h1 className="lg:text-5xl">
-          Hi 👋 <br /> I am Ayan Ghosh
+        <h1 className="lg:text-3xl">
+          Hi, I am <br />
+          <span className="lg:text-5xl">Ayan Ghosh</span>
         </h1>
         <p className="text-stone-500 lg:text-xl">
           I am very happy person. <br /> A passionate Web developer from India.
@@ -32,6 +33,14 @@ const Heroes = () => {
           />
           <SocialBtn url="https://github.com/ayanonline" src="/github.png" />
         </div>
+        <a
+          href="https://drive.google.com/uc?export=download&id=1VU_2SL4q8vP1NZOeSs4t2gEXNaDSsoLU"
+          className="mt-4"
+        >
+          <button className="rounded-md bg-black px-4 py-3 text-white">
+            Download CV
+          </button>
+        </a>
       </div>
     </div>
   );

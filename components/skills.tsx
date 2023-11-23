@@ -32,7 +32,7 @@ const Skills = () => {
       </div>
       <Link
         href="/skills"
-        className="mx-auto flex w-fit hover:text-blue-500 hover:underline lg:text-xl"
+        className="mx-auto flex w-fit hover:underline first-letter:hover:text-blue-500 lg:text-xl"
       >
         View all skills
       </Link>
