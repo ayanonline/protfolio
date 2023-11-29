@@ -25,7 +25,7 @@ const Skills = () => {
       <h1 className="flex w-full justify-center py-5 font-semibold lg:text-2xl">
         My Skills
       </h1>
-      <div className="mb-5 flex flex-wrap justify-center gap-4">
+      <div className="mx-10 mb-5 flex flex-wrap justify-center gap-2 lg:gap-4">
         {skills.map((skill, index) => (
           <SkillCard key={index} name={skill.name} icon={skill.icon} />
         ))}

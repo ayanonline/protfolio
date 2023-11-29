@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="mt-20">
+    <main className="mt-16">
       <Heroes />
       <Projects />
       <Skills />
