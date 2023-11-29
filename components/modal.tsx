@@ -30,7 +30,7 @@ const Modal: React.FC<ModalProps> = ({ children, isOpen, onClose }) => {
     <div className="absolute left-0 top-0 flex h-[100vh] w-full items-center justify-center bg-black bg-opacity-75">
       <div
         ref={modalRef}
-        className="relative rounded-md bg-white px-6 py-5 pb-6 lg:w-[40rem] lg:py-12"
+        className="relative w-[80%] rounded-md bg-white p-3 py-5 pb-6 sm:w-[50%] lg:w-[40rem] lg:px-6 lg:py-12"
       >
         <button
           className="absolute right-0 top-0 p-2 lg:text-xl"
