@@ -18,12 +18,14 @@ const Projects = () => {
   ];
 
   return (
-    <section className="bg-stone-200 py-5">
+    <section className="bg-stone-200 py-2 lg:py-5">
       <div className="flex w-full flex-col items-center justify-center">
-        <h1 className="text-xl font-semibold lg:text-2xl">Recent Projects</h1>
-        <p>Some recent projects which I build using tranding technologies</p>
+        <h1 className="text-sm font-semibold lg:text-2xl">Recent Projects</h1>
+        <p className="text-xs lg:text-base">
+          Some recent projects which I build using tranding technologies
+        </p>
       </div>
-      <div className="mt-5 flex flex-wrap items-center justify-center gap-4">
+      <div className="flex flex-wrap items-center justify-center lg:mt-5 lg:gap-4">
         {projects.map((project, index) => (
           <ProjectCard key={index} data={project} />
         ))}

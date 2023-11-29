@@ -5,9 +5,9 @@ const SocialBtn = ({ url, src }) => {
     <a
       href={url}
       target="blank"
-      className="rounded-full bg-white p-2 transition-all duration-300 ease-in-out hover:scale-125"
+      className="rounded-full bg-white p-1 transition-all duration-300 ease-in-out hover:scale-125 md:p-2"
     >
-      <div className="relative h-12 w-12">
+      <div className="relative h-4 w-4 lg:h-12 lg:w-12">
         <Image
           src={src}
           fill

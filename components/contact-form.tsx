@@ -75,14 +75,14 @@ const ContactForm = () => {
       onSubmit={submitHandler}
       validationSchema={validationSchema}
     >
-      <Form className="flex flex-col gap-4">
+      <Form className="flex flex-col gap-2 text-sm lg:gap-4 lg:text-base">
         <div className="flex flex-col ">
           <label htmlFor="name">Name:</label>
           <Field
             type="text"
             id="name"
             name="name"
-            className="rounded-md border border-black px-4 py-3 focus:outline-none"
+            className="rounded-md border border-black p-2 focus:outline-none lg:px-4 lg:py-3"
           />
           <ErrorMessage name="name" component="div" className="text-red-500" />
         </div>
@@ -92,7 +92,7 @@ const ContactForm = () => {
             type="email"
             id="email"
             name="email"
-            className="rounded-md border border-black px-4 py-3 focus:outline-none"
+            className="rounded-md border border-black p-2 focus:outline-none lg:px-4 lg:py-3"
           />
           <ErrorMessage name="email" component="div" className="text-red-500" />
         </div>
@@ -103,7 +103,7 @@ const ContactForm = () => {
             id="message"
             name="message"
             placeholder="Your message..."
-            className="h-40 rounded-md border border-black px-4 py-3 focus:outline-none"
+            className="h-20 rounded-md border border-black p-2 focus:outline-none lg:h-40 lg:px-4 lg:py-3"
           />
           <ErrorMessage
             name="message"
@@ -113,7 +113,7 @@ const ContactForm = () => {
         </div>
         <button
           type="submit"
-          className="rounded-md bg-black px-4 py-3 text-white lg:text-xl"
+          className="rounded-md bg-black p-2 text-white lg:px-4 lg:py-3 lg:text-xl"
         >
           Submit
         </button>

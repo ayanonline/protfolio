@@ -30,13 +30,13 @@ const Modal: React.FC<ModalProps> = ({ children, isOpen, onClose }) => {
     <div className="absolute left-0 top-0 flex h-[100vh] w-full items-center justify-center bg-black bg-opacity-75">
       <div
         ref={modalRef}
-        className="relative w-[40rem] bg-white px-6 py-12 pb-6 rounded-md"
+        className="relative rounded-md bg-white px-6 py-5 pb-6 lg:w-[40rem] lg:py-12"
       >
         <button
           className="absolute right-0 top-0 p-2 lg:text-xl"
           onClick={() => onClose(false)}
         >
-          <IoCloseCircle className="h-6 w-6 lg:h-10 lg:w-10"/>
+          <IoCloseCircle className="h-6 w-6 lg:h-10 lg:w-10" />
         </button>
         {children}
       </div>
