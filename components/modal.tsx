@@ -1,5 +1,6 @@
 "use client";
-import React, { useEffect, useReducer, useRef } from "react";
+import React, { useEffect, useRef } from "react";
+import { IoCloseCircle } from "react-icons/io5";
 
 interface ModalProps {
   children: React.ReactNode;
@@ -29,13 +30,13 @@ const Modal: React.FC<ModalProps> = ({ children, isOpen, onClose }) => {
     <div className="absolute left-0 top-0 flex h-[100vh] w-full items-center justify-center bg-black bg-opacity-75">
       <div
         ref={modalRef}
-        className="relative w-[40rem] bg-white px-6 py-12 pb-6"
+        className="relative w-[40rem] bg-white px-6 py-12 pb-6 rounded-md"
       >
         <button
           className="absolute right-0 top-0 p-2 lg:text-xl"
           onClick={() => onClose(false)}
         >
-          Close
+          <IoCloseCircle className="h-6 w-6 lg:h-10 lg:w-10"/>
         </button>
         {children}
       </div>
