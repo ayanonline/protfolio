@@ -10,6 +10,12 @@ const Projects = () => {
       url: "https://youtube-ayan.netlify.app/",
     },
     {
+      title: "Service Booking",
+      desc: `A service booking app using Stripe-payment-gateway, Expressjs, JWT, REACT JS, react-router-dom, tailwindCSS`,
+      img: "/service-booking.png",
+      url: "https://service-booking.netlify.app",
+    },
+    {
       title: "Youtube video Downloader",
       desc: `I have created this youtube video downloader app using REACT JS & EXPRESS . In backend I used "ytdl-core" npm package.`,
       img: "/ytdownload.webp",
