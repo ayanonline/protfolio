@@ -1,0 +1,14 @@
+{
+   "frontend": [
+      "React Js",
+      "Next Js",
+      "React-native",
+      "Redux-Tool-Kit",
+      "React-Query",
+      "Tailwind CSS",
+      "SCSS"
+   ],
+   "backend": ["Express", "Node Js", "MongoDB", "Rest API", "socket.io"],
+   "languages": ["TypeScript", "JavaScript", "Core-Java", "Advance-Java", "C"],
+   "tools": ["Git", "GitHub", "Figma"]
+}
