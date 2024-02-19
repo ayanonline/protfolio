@@ -1,38 +1,29 @@
 import React from 'react';
 import projects from '@/data/projects.json';
-import {
-   Card,
-   Image,
-   Button,
-   Link,
-   CardHeader,
-   CardBody,
-   CardFooter,
-} from '@nextui-org/react';
+import { Card, Button, Link, CardHeader, CardBody, CardFooter } from '@nextui-org/react';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 
 const Projects = () => {
    return (
-      <div className="p-4">
+      <div id="projects" className="p-4">
          <p className="font-bold text-[22px]">Recent Projects</p>
          <div className="flex flex-wrap gap-3 justify-between">
             {projects.map((item, index) => (
-               <Card
-                  key={index}
-                  radius="sm"
-                  className="border-none w-[48%] min-h-[242px] max-h-[242px]"
-               >
+               <Card key={index} radius="sm" className="border-none w-[48%] ">
                   <a href={item.url} target="blank">
-                     <img
+                     <Image
                         alt="Woman listing to music"
-                        className="rounded-md object-cover min-h-[173px] max-h-[173px] w-full"
-                        src="https://miro.medium.com/v2/resize:fit:1000/1*KDMx1YspSrBcFJG-NDZgDg.png"
+                        width="400"
+                        height="400"
+                        className="rounded-md object-cover  w-full border-b-1"
+                        src={item.image}
                      />
                   </a>
 
                   <div className="p-1">
-                     <p className="font-bold">{item.title.slice(0, 16)}...</p>
-                     <p>{item.desc.slice(0, 18)}...</p>
+                     <p className="font-bold text-center">{item.title}</p>
+                     {/* <p>{item.desc.slice(0, 18)}...</p> */}
                   </div>
                </Card>
             ))}

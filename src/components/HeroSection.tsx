@@ -1,14 +1,17 @@
-import { Button, Image } from '@nextui-org/react';
+import { cv } from '@/constants';
+import { Button } from '@nextui-org/react';
+import Image from 'next/image';
 import React from 'react';
 
 const HeroSection = () => {
    return (
-      <div className="flex flex-col items-center p-4 gap-4">
+      <div id="hero" className="flex flex-col items-center p-4 gap-4">
          <Image
             alt="an image"
-            radius="full"
-            src="https://ayanghosh.netlify.app/_ipx/w_1920,q_75/%2Fayan.webp?url=%2Fayan.webp&w=1920&q=75"
-            className="bg-gray-400 object-cover h-[128px] w-[128px]"
+            height="400"
+            width="400"
+            src="/ayan.webp"
+            className="bg-gray-400 object-cover h-[128px] w-[128px] rounded-full"
          />
          <div>
             <div className="flex flex-col items-center">
@@ -19,7 +22,7 @@ const HeroSection = () => {
             </div>
             <div className="flex gap-[12px] justify-between p-[12px]">
                <Button radius="sm" className="bg-black text-white w-1/2">
-                  Download CV
+                  <a href={cv}>Download CV</a>
                </Button>
                <Button radius="sm" className="w-1/2">
                   Contact me

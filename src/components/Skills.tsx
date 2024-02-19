@@ -5,7 +5,7 @@ import { Accordion, AccordionItem, Button } from '@nextui-org/react';
 
 const Skills = () => {
    return (
-      <div className="p-4">
+      <div id="skills" className="p-4">
          <p className="text-[22px] font-bold">Skills</p>
          <Accordion isCompact={true} variant="light" defaultExpandedKeys="1">
             <AccordionItem key="1" aria-label="Accordion 1" title="Frontend">
