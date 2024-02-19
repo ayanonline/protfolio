@@ -19,7 +19,7 @@ import { CiFileOn, CiFolderOn, CiHome, CiMail } from 'react-icons/ci';
 
 export default function Header() {
    return (
-      <header className="w-full fixed bottom-0 z-50 md:top-0">
+      <header className="w-full fixed bottom-0 z-50 md:top-0 h-[75px]">
          <Navbar
             isBordered
             maxWidth="full"
@@ -53,7 +53,7 @@ export default function Header() {
             </NavbarContent>
          </Navbar>
 
-         <div className="md:hidden rounded-tl-md rounded-tr-md border bg-white h-[75px] shadow-inner flex justify-around">
+         <div className="md:hidden rounded-tl-md rounded-tr-md border bg-white shadow-inner flex justify-around h-full">
             <div className="flex flex-col justify-center items-center">
                <CiHome className="h-6 w-6" />
                <span>Home</span>
