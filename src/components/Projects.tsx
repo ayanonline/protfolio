@@ -20,12 +20,12 @@ const Projects = () => {
                <Card
                   key={index}
                   radius="sm"
-                  className="border-none min-w-[165px] max-w-[165px] min-h-[242px] max-h-[242px]"
+                  className="border-none w-[48%] min-h-[242px] max-h-[242px]"
                >
                   <a href={item.url} target="blank">
                      <img
                         alt="Woman listing to music"
-                        className="rounded-md object-cover min-h-[173px] max-h-[173px] w-[173px]"
+                        className="rounded-md object-cover min-h-[173px] max-h-[173px] w-full"
                         src="https://miro.medium.com/v2/resize:fit:1000/1*KDMx1YspSrBcFJG-NDZgDg.png"
                      />
                   </a>
